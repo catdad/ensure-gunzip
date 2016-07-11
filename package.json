@@ -1,0 +1,24 @@
+{
+  "name": "ensure-gunzip",
+  "version": "0.0.1",
+  "description": "Unzips gzipped streams to ensure that the content being read is always uncompressed",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Kiril Vatev <vatev.1@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "node-stream": "0.0.6"
+  },
+  "dependencies": {
+    "is-gzip-stream": "^0.2.0",
+    "through2": "^2.0.1"
+  }
+}
