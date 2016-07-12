@@ -20,5 +20,13 @@
   "dependencies": {
     "is-gzip-stream": "^0.2.1",
     "through2": "^2.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catdad/ensure-gunzip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catdad/ensure-gunzip/issues"
+  },
+  "homepage": "https://github.com/catdad/ensure-gunzip#readme"
 }
