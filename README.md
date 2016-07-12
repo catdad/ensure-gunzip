@@ -22,3 +22,23 @@
 
 [10]: https://david-dm.org/catdad/ensure-gunzip.svg
 [11]: https://david-dm.org/catdad/ensure-gunzip
+
+Detects gzip compression and makes sure that a stream always gets unzipped if needed.
+
+## Install
+
+```bash
+npm install --save ensure-gunzip
+```
+
+## Use
+
+```javascript
+var ensureGunzip = require('ensure-gunzip');
+
+var mysteriousStream = getStreamSomehow();
+
+var stream = ensureGunzip(mysteriousStream);
+
+// read plain data from `stream`
+```
