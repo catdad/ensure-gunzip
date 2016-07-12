@@ -69,4 +69,13 @@ describe('[index]', function() {
 
         input.emit('error', ERR);
     });
+
+    it('handles errors that occur in is-gzip-stream', function(done) {
+        var out = m('not a stream');
+
+        out.on('error', function(err) {
+            expect(err).to.be.an.instanceOf(TypeError);
+            done();
+        });
+    });
 });
